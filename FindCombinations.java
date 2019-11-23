@@ -7,14 +7,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class Flipkart {
-	public static void main(String[] args) {
-		List<String> result = findCombinations(3, 2);
-		for (String string : result) {
-			System.out.println(string);
-		}
-	}
-
+public class Solution {
+	
 	private static List<String> findCombinations(int m, int n) {
 		Set<String> resList = new HashSet<>();
 		recur(0, 0, m, n, "", resList);
